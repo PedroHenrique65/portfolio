@@ -1,6 +1,6 @@
-// turn pages when click next or prev button
+// virar as páginas ao clicar no botão próximo ou anterior
 
-const pageTurnBtn = document.querySelectorAll('.nextprev-btn')
+const pageTurnBtn = document.querySelectorAll('.prox-anterior-btn')
 
 pageTurnBtn.forEach((el, index) => {
   el.onclick = () => {
@@ -21,10 +21,10 @@ pageTurnBtn.forEach((el, index) => {
   }
 })
 
-//contact me button when click
+//botão entre em contato comigo quando clicar
 
-const pages = document.querySelectorAll('.book-page.page-right')
-const contactMeBtn = document.querySelector('.btn.contact-me')
+const pages = document.querySelectorAll('.pag-livro.pag-direita')
+const contactMeBtn = document.querySelector('.btn.contate-me')
 
 contactMeBtn.onclick = () => {
   pages.forEach((page, index) => {
@@ -38,7 +38,7 @@ contactMeBtn.onclick = () => {
   })
 }
 
-// create reverse index function
+// criar função de índice reverso
 
 let totalPages = pages.length
 let pageNumber = 0
@@ -51,7 +51,7 @@ function reverseIndex() {
   }
 }
 
-// back profile button whe click
+// botão de perfil atrás ao clicar
 const backProfileBtn = document.querySelector('.back-profile')
 backProfileBtn.onclick = () => {
   pages.forEach((_, index) => {
@@ -68,11 +68,11 @@ backProfileBtn.onclick = () => {
   })
 }
 
-//opening animation
+//animação de abertura
 const coverRight = document.querySelector('.cover.cover-right')
-const pageLeft = document.querySelector('.book-page.page-left')
+const pageLeft = document.querySelector('.pag-livro.pag-esquerda')
 
-//opening animation (cover right animation)
+//animação de abertura (animação da capa direita)
 
 setTimeout(() => {
   coverRight.classList.add('turn')
@@ -82,13 +82,13 @@ setTimeout(() => {
   coverRight.style.zIndex = -1
 }, 2800)
 
-//opening animation (cover left or profile page animation)
+//animação de abertura (capa esquerda ou animação da página de perfil)
 
 setTimeout(() => {
   pageLeft.style.zIndex = 20
 }, 3200)
 
-//opening animation (all page right animation)
+//animação de abertura (animação de todas as páginas à direita)
 
 pages.forEach((_, index) => {
   setTimeout(() => {
