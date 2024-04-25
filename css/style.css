@@ -488,10 +488,6 @@ body {
   top: -1.8rem;
 }
 
-.engrenagem {
-  width: 3.5rem;
-}
-
 .jupyter {
   width: 2.5rem;
 }
@@ -513,9 +509,13 @@ body {
 }
 
 .preditiva {
-  width: 3.6rem;
+  width: 3rem;
 }
 
 .segmentação {
-  width: 3.5rem;
+  width: 3rem;
+}
+
+.engrenagem {
+  width: 3rem;
 }
