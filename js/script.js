@@ -102,3 +102,4 @@ pages.forEach((_, index) => {
     }, 500)
   }, (index + 1) * 200 + 2100)
 })
+
