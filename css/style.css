@@ -32,7 +32,7 @@ body {
   margin: 3rem;
 }
 
-.wrapper {
+.conteiner {
   position: relative;
   width: 66rem;
   height: 45rem;
@@ -53,7 +53,7 @@ body {
   }
 }
 
-.cover {
+.capa {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,20 +66,20 @@ body {
   transform-origin: right;
 }
 
-.cover.cover-left {
+.capa.capa-esquerda {
   z-index: -1;
 }
 
-.cover.cover-right {
+.capa.capa-direita {
   z-index: 100;
   transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.cover.cover-right.turn {
+.capa.capa-direita.virar {
   transform: rotateY(180deg);
 }
 
-.book {
+.livro {
   position: relative;
   width: 100%;
   height: 100%;
@@ -87,7 +87,7 @@ body {
   perspective: 250rem;
 }
 
-.book .pag-livro {
+.livro .pag-livro {
   position: absolute;
   width: 50%;
   height: 100%;
@@ -196,7 +196,7 @@ body {
   transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.pag-livro.pag-direita.turn {
+.pag-livro.pag-direita.virar {
   transform: rotateY(-180deg);
 }
 
@@ -279,7 +279,7 @@ body {
   color: var(--cor-principal);
 }
 
-.prox-anterior-btn.back {
+.prox-anterior-btn.voltar {
   left: 1.5rem;
 }
 
@@ -375,7 +375,7 @@ body {
 
 .portfolio-box .img-box img {
   width: 100%;
-  object-fit: cover;
+  object-fit: capa;
   transition: 0.5s ease;
 }
 
@@ -449,7 +449,7 @@ body {
   cursor: pointer;
 }
 
-.back-profile {
+.voltar-perfil {
   position: absolute;
   bottom: 1.2rem;
   right: 2rem;
@@ -466,12 +466,12 @@ body {
   transition: 0.5s;
 }
 
-.back-profile:hover {
+.voltar-perfil:hover {
   background: var(--cor-principal);
   color: white;
 }
 
-.back-profile p {
+.voltar-perfil p {
   position: absolute;
   top: 0;
   left: 50%;
@@ -482,7 +482,7 @@ body {
   transition: 0.5s;
 }
 
-.back-profile:hover p {
+.voltar-perfil:hover p {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;

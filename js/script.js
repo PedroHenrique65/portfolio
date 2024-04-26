@@ -7,13 +7,13 @@ pageTurnBtn.forEach((el, index) => {
     const pageTurnId = el.getAttribute('data-pages')
     const pageTurn = document.getElementById(pageTurnId)
 
-    if (pageTurn.classList.contains('turn')) {
-      pageTurn.classList.remove('turn')
+    if (pageTurn.classList.contains('virar')) {
+      pageTurn.classList.remove('virar')
       setTimeout(() => {
         pageTurn.style.zIndex = 20 - index
       }, 500)
     } else {
-      pageTurn.classList.add('turn')
+      pageTurn.classList.add('virar')
       setTimeout(() => {
         pageTurn.style.zIndex = 20 + index
       }, 500)
@@ -29,7 +29,7 @@ const contactMeBtn = document.querySelector('.btn.contate-me')
 contactMeBtn.onclick = () => {
   pages.forEach((page, index) => {
     setTimeout(() => {
-      page.classList.add('turn')
+      page.classList.add('virar')
 
       setTimeout(() => {
         page.style.zIndex = 20 + index
@@ -52,13 +52,13 @@ function reverseIndex() {
 }
 
 // botão de perfil atrás ao clicar
-const backProfileBtn = document.querySelector('.back-profile')
+const backProfileBtn = document.querySelector('.voltar-perfil')
 backProfileBtn.onclick = () => {
   pages.forEach((_, index) => {
     setTimeout(() => {
       reverseIndex()
 
-      pages[pageNumber].classList.remove('turn')
+      pages[pageNumber].classList.remove('virar')
 
       setTimeout(() => {
         reverseIndex()
@@ -69,13 +69,13 @@ backProfileBtn.onclick = () => {
 }
 
 //animação de abertura
-const coverRight = document.querySelector('.cover.cover-right')
+const coverRight = document.querySelector('.capa.capa-direita')
 const pageLeft = document.querySelector('.pag-livro.pag-esquerda')
 
 //animação de abertura (animação da capa direita)
 
 setTimeout(() => {
-  coverRight.classList.add('turn')
+  coverRight.classList.add('virar')
 }, 2100)
 
 setTimeout(() => {
@@ -94,7 +94,7 @@ pages.forEach((_, index) => {
   setTimeout(() => {
     reverseIndex()
 
-    pages[pageNumber].classList.remove('turn')
+    pages[pageNumber].classList.remove('virar')
 
     setTimeout(() => {
       reverseIndex()
