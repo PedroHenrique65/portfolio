@@ -28,7 +28,7 @@ body {
   background: var(--bg-cor);
   color: var(--cor-texto);
   overflow: hidden;
-  zoom: 88%;
+  zoom: 80%;
   margin: 3rem;
 }
 
